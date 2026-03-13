@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metal Roofing Innovations USA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --red-primary: #c0141b;
+      --red-hover: #a01018;
+      --red-dark: #8a0d13;
+      --navy: #1a2d5a;
+      --white: #ffffff;
+      --gray-input: #f9f9f9;
+      --gray-border: #cccccc;
+      --gray-text: #555555;
+      --font-heading: 'Oswald', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--white);
+      color: #333;
+    }
+
+    /* ─── HEADER ─────────────────────────────────────── */
+    .site-header {
+      background: var(--white);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    /* Replace with actual logo image */
+    .logo-icon {
+      width: 52px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-text .brand-main {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .logo-text .brand-main span {
+      color: var(--red-primary);
+    }
+
+    .logo-text .brand-sub {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+
+    /* ─── HERO SECTION ───────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 73px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 48px 20px 60px;
+      overflow: hidden;
+    }
+
+    /* Replace src with actual hero background image */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.77);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 860px;
+      text-align: center;
+    }
+
+    .hero-headline {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4.5vw, 48px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+      letter-spacing: 0.5px;
+    }
+
+    .hero-subline {
+      font-size: clamp(14px, 1.8vw, 18px);
+      color: var(--white);
+      margin-bottom: 30px;
+      line-height: 1.5;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .hero-subline strong {
+      font-weight: 700;
+    }
+
+    /* ─── FORM CARD ──────────────────────────────────── */
+    .form-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 22px 22px 18px;
+      width: 100%;
+      max-width: 290px;
+      margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--gray-border);
+      border-radius: 3px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: #444;
+      background: var(--gray-input);
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-group input::placeholder {
+      color: #888;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--navy);
+      background: var(--white);
+    }
+
+    .form-group.select-wrap {
+      position: relative;
+    }
+
+    .form-group.select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #666;
+      pointer-events: none;
+    }
+
+    .form-group select {
+      color: #444;
+      cursor: pointer;
+    }
+
+    /* CTA Button */
+    .btn-cta {
+      display: block;
+      width: 100%;
+      padding: 16px 12px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 4px;
+      text-transform: none;
+    }
+
+    .btn-cta:hover {
+      background: var(--red-hover);
+    }
+
+    .btn-cta:active {
+      background: var(--red-dark);
+      transform: scale(0.99);
+    }
+
+    /* Legal disclaimer */
+    .legal-text {
+      font-size: 10.5px;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 12px;
+      text-align: left;
+    }
+
+    .legal-text a {
+      color: #555;
+      text-decoration: underline;
+    }
+
+    .legal-text a:hover {
+      color: var(--navy);
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 600px) {
+      .site-header {
+        padding: 10px 16px;
+      }
+
+      .logo-text .brand-main {
+        font-size: 18px;
+      }
+
+      .hero {
+        padding: 36px 16px 48px;
+      }
+
+      .form-card {
+        max-width: 100%;
+      }
+    }
+      /* ─── HOW IT WORKS SECTION ───────────────────────── */
+    .how-it-works {
+      padding: 60px 24px 50px;
+      background: #ffffff;
+      text-align: center;
+    }
+ 
+    .section-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
+ 
+    /* ─── CARDS GRID ─────────────────────────────────── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      max-width: 1100px;
+      margin: 0 auto 40px;
+    }
+ 
+    /* Single unified dark card — icon + title + body all inside */
+    .step-card {
+      background: linear-gradient(#111111, #545454);
+      border-radius: 4px;
+      padding: 32px 22px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+ 
+    /* Icon */
+    .step-icon {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+ 
+    /* Step title */
+    .step-title {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 14px;
+      letter-spacing: 0.3px;
+    }
+ 
+    .step-title span {
+      display: block;
+    }
+ 
+    /* Step body */
+    .step-body {
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      color: #cccccc;
+      line-height: 1.7;
+    }
+ 
+    .step-body strong {
+      color: var(--white);
+      font-weight: 700;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+ 
+    .btn-pricing {
+      display: inline-block;
+      padding: 18px 80px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    .cta-caption {
+      font-size: 14px;
+      color: black !important;
+      font-family: var(--font-body);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 900px) {
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+ 
+    @media (max-width: 520px) {
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+ 
+      .btn-pricing {
+        padding: 16px 40px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 340px;
+        text-align: center;
+      }
+    }
+
+    /* ─── SECTION WRAPPER ────────────────────────────── */
+    .middleman-section {
+      position: relative;
+      width: 100%;
+      padding: 70px 40px;
+      overflow: hidden;
+    }
+ 
+    /* Background image — replace path here */
+    .middleman-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/warehouse.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+ 
+    /* Dark overlay */
+    .middleman-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      z-index: 1;
+    }
+ 
+    /* Inner container */
+    .middleman-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+ 
+    /* ─── LEFT: IMAGE ────────────────────────────────── */
+    .middleman-image-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    /* Replace with actual worker/feature image */
+    .middleman-image {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+ 
+    /* ─── RIGHT: TEXT ────────────────────────────────── */
+    .middleman-text {
+      text-align: center;
+      color: var(--white);
+    }
+ 
+    .middleman-headline {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 3.5vw, 46px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+ 
+    .middleman-subheading {
+      font-family: var(--font-body);
+      font-size: clamp(15px, 1.8vw, 20px);
+      font-weight: 400;
+      color: #dddddd;
+      margin-bottom: 24px;
+      letter-spacing: 0.2px;
+    }
+ 
+    .middleman-body {
+      font-family: var(--font-body);
+      font-size: clamp(13px, 1.4vw, 16px);
+      color: #cccccc;
+      line-height: 1.75;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .btn-get-pricing {
+      display: inline-block;
+      padding: 18px 70px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-get-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-get-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .middleman-section {
+        padding: 50px 24px;
+      }
+ 
+      .middleman-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        text-align: center;
+      }
+ 
+      .middleman-image {
+        max-width: 100%;
+      }
+ 
+      .btn-get-pricing {
+        padding: 16px 40px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+
+    /* ─── SECTION ────────────────────────────────────── */
+    .nextgen-section {
+      padding: 60px 40px 70px;
+      background: #ffffff;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+ 
+    /* ─── HEADING ────────────────────────────────────── */
+    .nextgen-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4vw, 50px);
+      font-weight: 700;
+      color: #111;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 44px;
+      letter-spacing: 0.3px;
+    }
+ 
+    /* ─── TWO-COLUMN GRID ────────────────────────────── */
+    .nextgen-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start;
+    }
+ 
+    /* ─── LEFT COLUMN ────────────────────────────────── */
+    .nextgen-left {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+ 
+    .nextgen-body {
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: #333;
+      line-height: 1.78;
+    }
+ 
+    .nextgen-body strong {
+      font-weight: 700;
+      color: #111;
+    }
+ 
+    /* ─── CHECKLIST ──────────────────────────────────── */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+ 
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: #222;
+      line-height: 1.4;
+    }
+ 
+    /* Red circle checkmark icon */
+    .check-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--red-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    .check-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+ 
+    /* ─── RIGHT COLUMN: IMAGE ────────────────────────── */
+    .nextgen-image-wrap {
+      width: 100%;
+    }
+ 
+    /* Replace with actual roof image: images/nextgen-roof.jpg */
+    .nextgen-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .nextgen-section {
+        padding: 48px 24px 56px;
+      }
+ 
+      .nextgen-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+ 
+      .nextgen-image {
+        max-width: 100%;
+      }
+    }
+
+    /* ─── SECTION ────────────────────────────────────── */
+    .diagram-section {
+      padding: 60px 24px 50px;
+      background: #ffffff;
+      text-align: center;
+    }
+ 
+    /* ─── CENTER IMAGE ───────────────────────────────── */
+    .diagram-image-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+ 
+    /* Replace with actual product image: images/roofing-layers.png */
+    .diagram-image {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+ 
+    .btn-pricing {
+      display: inline-block;
+      padding: 18px 80px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    .cta-caption {
+      font-size: 14px;
+      color: #666;
+      font-family: var(--font-body);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 520px) {
+      .btn-pricing {
+        padding: 16px 40px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+
+    /* ─── SECTION WRAPPER ────────────────────────────── */
+    .energy-section {
+      position: relative;
+      width: 100%;
+      padding: 70px 40px;
+      overflow: hidden;
+    }
+ 
+    /* Background image — replace path here */
+    .energy-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/energy-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+ 
+    /* Dark overlay */
+    .energy-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.77);
+      z-index: 1;
+    }
+ 
+    /* Inner container */
+    .energy-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+ 
+    /* ─── LEFT: IMAGE ────────────────────────────────── */
+    .energy-image-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    /* Replace with actual image: images/energy-worker.jpg */
+    .energy-image {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+ 
+    /* ─── RIGHT: TEXT ────────────────────────────────── */
+    .energy-text {
+      text-align: center;
+      color: var(--white);
+    }
+ 
+    .energy-headline {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 3.5vw, 44px);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+ 
+    .energy-subheading {
+      font-family: var(--font-body);
+      font-size: clamp(15px, 1.8vw, 20px);
+      font-weight: 400;
+      color: #dddddd;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+ 
+    .energy-body {
+      font-family: var(--font-body);
+      font-size: clamp(13px, 1.4vw, 16px);
+      color: #cccccc;
+      line-height: 1.75;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .btn-get-pricing {
+      display: inline-block;
+      padding: 18px 70px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-get-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-get-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .energy-section {
+        padding: 50px 24px;
+      }
+ 
+      .energy-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+ 
+      .energy-image {
+        max-width: 100%;
+      }
+ 
+      .btn-get-pricing {
+        padding: 16px 40px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+    /* ─── SECTION ────────────────────────────────────── */
+    .customers-section {
+      padding: 60px 24px 50px;
+      background: #ffffff;
+      text-align: center;
+    }
+ 
+    /* Stars image */
+    .stars-image {
+      width: auto;
+      height: 32px;
+      display: inline-block;
+      margin-bottom: 5px;
+      object-fit: contain;
+    }
+ 
+    /* Heading */
+    .customers-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 20px;
+      letter-spacing: 0.3px;
+    }
+ 
+    /* Subtext */
+    .customers-subtext {
+      font-family: var(--font-body);
+      font-size: clamp(14px, 1.6vw, 18px);
+      color: #333;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 520px) {
+      .customers-section {
+        padding: 48px 20px 40px;
+      }
+ 
+      .stars-image {
+        height: 36px;
+      }
+    }
+
+    /* ─── SECTION ────────────────────────────────────── */
+    .testimonial-section {
+      padding: 20px 24px 50px;
+      background: #ffffff;
+      text-align: center;
+    }
+ 
+    /* ─── VIDEO THUMBNAIL ────────────────────────────── */
+    .video-wrap {
+      position: relative;
+      display: inline-block;
+      max-width: 640px;
+      width: 100%;
+      margin-bottom: 32px;
+      cursor: pointer;
+    }
+ 
+    /* Replace with actual video thumbnail: images/video-thumbnail.jpg */
+    .video-thumbnail {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+ 
+ 
+ 
+ 
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+ 
+    .btn-zip {
+      display: inline-block;
+      padding: 18px 80px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-zip:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-zip:active {
+      transform: scale(0.99);
+    }
+ 
+    .cta-caption {
+      font-size: 14px;
+      color: #444;
+      font-family: var(--font-body);
+    }
+ 
+    .cta-caption strong {
+      font-weight: 700;
+      color: #111;
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 520px) {
+      .rating-score {
+        font-size: 26px;
+      }
+ 
+      .rating-label {
+        font-size: 10px;
+      }
+ 
+      .rating-logo {
+        height: 22px;
+      }
+ 
+      .btn-zip {
+        padding: 16px 40px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+
+    /* ─── SECTION ────────────────────────────────────── */
+    .reviews-section {
+      position: relative;
+      width: 100%;
+      padding: 60px 24px;
+      overflow: hidden;
+    }
+ 
+    /* Background collage image — replace path here */
+    .reviews-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/review.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+ 
+    /* Dark overlay */
+    .reviews-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.68);
+      z-index: 1;
+    }
+ 
+    /* Inner container */
+    .reviews-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+ 
+    /* ─── REVIEW CARD ────────────────────────────────── */
+    .review-card {
+      background: var(--white);
+      padding: 28px 28px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+    }
+ 
+    /* Stars image */
+    .review-stars {
+      height: 16px;
+      width: auto;
+      object-fit: contain;
+    }
+ 
+    /* Quote text */
+    .review-quote {
+      font-family: var(--font-body);
+      font-size: 14.5px;
+      color: #222;
+      line-height: 1.75;
+    }
+ 
+    .review-quote strong {
+      font-weight: 700;
+      color: #111;
+    }
+ 
+    /* Reviewer name */
+    .review-name {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 700;
+      color: #111;
+      margin-top: 4px;
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 860px) {
+      .reviews-container {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+      }
+    }
+    /* ─── SECTION ────────────────────────────────────── */
+    .financial-section {
+      padding: 60px 40px 70px;
+      background: #ffffff;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+ 
+    /* ─── TWO-COLUMN GRID ────────────────────────────── */
+    .financial-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+ 
+    /* ─── LEFT COLUMN ────────────────────────────────── */
+    .financial-left {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+ 
+    .financial-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 3.5vw, 44px);
+      font-weight: 700;
+      color: #111;
+      line-height: 1.2;
+      letter-spacing: 0.3px;
+    }
+ 
+    .financial-body {
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: #333;
+      line-height: 1.75;
+      text-align: center;
+    }
+ 
+    .financial-body strong {
+      font-weight: 700;
+      color: #111;
+    }
+ 
+    /* ─── CHECKLIST ──────────────────────────────────── */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+ 
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: var(--font-body);
+      font-size: 15.5px;
+      color: #222;
+      line-height: 1.4;
+    }
+ 
+    /* Red circle checkmark */
+    .check-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--red-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+    .check-icon svg {
+      width: 14px;
+      height: 14px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .btn-get-pricing {
+      display: inline-block;
+      padding: 18px 60px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      align-self: flex-start;
+    }
+ 
+    .btn-get-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-get-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    /* ─── RIGHT COLUMN: IMAGE ────────────────────────── */
+    .financial-image-wrap {
+      width: 100%;
+    }
+ 
+    /* Replace with actual image: images/financial-customers.jpg */
+    .financial-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .financial-section {
+        padding: 48px 24px 56px;
+      }
+ 
+      .financial-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+ 
+      .btn-get-pricing {
+        align-self: stretch;
+        text-align: center;
+        padding: 16px 40px;
+        font-size: 18px;
+      }
+    }
+    /* ─── SECTION ────────────────────────────────────── */
+    .newroof-section {
+      position: relative;
+      width: 100%;
+      padding: 60px 24px 50px;
+      overflow: hidden;
+      text-align: center;
+    }
+ 
+    /* Background image — replace path here */
+    .newroof-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/roofbg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
+ 
+    /* Dark overlay */
+    .newroof-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.80);
+      z-index: 1;
+    }
+ 
+    /* Inner container */
+    .newroof-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+ 
+    /* ─── HEADING ────────────────────────────────────── */
+    .newroof-heading {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 4vw, 46px);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 18px;
+      letter-spacing: 0.3px;
+    }
+ 
+    .newroof-body {
+      font-family: var(--font-body);
+      font-size: clamp(13px, 1.5vw, 16px);
+      color: #dddddd;
+      line-height: 1.75;
+      max-width: 740px;
+      margin: 0 auto 40px;
+    }
+ 
+    .newroof-body strong {
+      font-weight: 700;
+      color: var(--white);
+    }
+ 
+    /* ─── IMAGE GRID ─────────────────────────────────── */
+    /* Row 1: 5 items */
+    .roof-grid-row1 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      margin-bottom: 12px;
+    }
+ 
+    /* Row 2: 3 items centered */
+    .roof-grid-row2 {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-bottom: 40px;
+    }
+ 
+    .roof-grid-row2 .roof-tile {
+      width: calc((100% - 24px) / 5);
+    }
+ 
+    /* Each tile */
+    .roof-tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+ 
+    /* Tile image */
+    .roof-tile img {
+      width: 60%;
+      aspect-ratio: 1.2 / 1;
+      object-fit: cover;
+      display: block;
+    }
+ 
+    /* Tile caption */
+    .roof-tile-label {
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      color: var(--white);
+      line-height: 1.35;
+      text-align: center;
+    }
+ 
+    /* ─── CTA BUTTON ─────────────────────────────────── */
+    .cta-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+ 
+    .btn-pricing {
+      display: inline-block;
+      padding: 18px 80px;
+      background: var(--red-primary);
+      color: var(--white);
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+ 
+    .btn-pricing:hover {
+      background: var(--red-hover);
+    }
+ 
+    .btn-pricing:active {
+      transform: scale(0.99);
+    }
+ 
+    .cta-caption {
+      font-size: 14px;
+      color: #ccc;
+      font-family: var(--font-body);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      .roof-grid-row1 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+ 
+      .roof-grid-row2 {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+ 
+      .roof-grid-row2 .roof-tile {
+        width: calc(33% - 8px);
+      }
+ 
+      .btn-pricing {
+        padding: 16px 40px;
+        font-size: 20px;
+        width: 100%;
+        max-width: 340px;
+      }
+    }
+ 
+    @media (max-width: 480px) {
+      .roof-grid-row1 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+ 
+      .roof-grid-row2 .roof-tile {
+        width: calc(50% - 6px);
+      }
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────── */
+    .site-footer {
+      padding: 36px 24px 40px;
+      background: #ffffff;
+      text-align: center;
+      border-top: 1px solid #e8e8e8;
+    }
+ 
+    /* Logo */
+    .footer-logo {
+      height: 50px;
+      width: auto;
+      display: inline-block;
+      margin-bottom: 20px;
+      object-fit: contain;
+    }
+ 
+    /* Disclaimer text */
+    .footer-disclaimer {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 600;
+      color: #555;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 12px;
+    }
+ 
+    /* Copyright text */
+    .footer-copyright {
+      font-family: var(--font-body);
+      font-size: 10px;
+       font-weight: 600;
+      color: #555;
+      line-height: 1.7;
+      max-width: 560px;
+      margin: 0 auto 14px;
+    }
+ 
+    /* Links row */
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+    }
+ 
+    .footer-links a {
+      color: blue;
+      text-decoration: none;
+      font-family: var(--font-body);
+    }
+ 
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+ 
+    .footer-links .divider {
+      color: hwb(0 60% 40%);
+    }
+ 
+    /* ─── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 520px) {
+      .footer-disclaimer,
+      .footer-copyright {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ─── HEADER ──────────────────────────────────────── -->
+  <header class="site-header">
+    <a href="#" class="logo-wrap">
+
+      <!-- Replace logo src path here if needed -->
+      <img src="images/logo-metalroof.png" alt="Metal Roofing Innovations USA" style="height: 56px; width: auto;" />
+    </a>
+  </header>
+
+  <!-- ─── HERO SECTION ──────────────────────────────────── -->
+  <section class="hero">
+
+    <!-- Replace /images/hero-roof-bg.jpg with actual background image -->
+    <div class="hero-bg" role="img" aria-label="Aerial view of a house with metal roof"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <!-- Edit headline text here -->
+      <h1 class="hero-headline">
+        You May Be Able to Get a New Metal Roof<br>
+        for $0 Down!&thinsp;<sup style="font-size:0.5em; vertical-align:super;">*</sup>
+      </h1>
+
+      <!-- Edit subheadline here -->
+      <p class="hero-subline">
+        Enter your information below <strong>NOW</strong> for full details and check to your zip code!
+      </p>
+
+      <!-- ─── FORM CARD ───────────────────────────────── -->
+      <div class="form-card">
+        <form action="#" method="post" novalidate>
+
+          <!-- First Name -->
+          <div class="form-group">
+            <input type="text" name="first_name" placeholder="First Name" autocomplete="given-name" />
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group">
+            <input type="text" name="last_name" placeholder="Last Name" autocomplete="family-name" />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email" autocomplete="email" />
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Phone" autocomplete="tel" />
+          </div>
+
+          <!-- Zip Code -->
+          <div class="form-group">
+            <input type="text" name="zip" placeholder="Zip Code" autocomplete="postal-code" maxlength="10" />
+          </div>
+
+          <!-- What do you need? dropdown -->
+          <div class="form-group select-wrap">
+            <select name="service_type" aria-label="What do you need?">
+              <option value="" disabled selected>What do you need?</option>
+              <option value="new_roof">New Roof Installation</option>
+              <option value="repair">Roof Repair</option>
+              <option value="replacement">Roof Replacement</option>
+              <option value="inspection">Roof Inspection</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Is your roof sloped or flat? dropdown -->
+          <div class="form-group select-wrap">
+            <select name="roof_type" aria-label="Is your roof sloped or flat?">
+              <option value="" disabled selected>Is your roof sloped or flat?</option>
+              <option value="sloped">Sloped</option>
+              <option value="flat">Flat</option>
+              <option value="combination">Combination</option>
+            </select>
+          </div>
+
+          <!-- CTA Submit Button -->
+          <button type="submit" class="btn-cta">Done!*</button>
+
+          <!-- Legal Disclaimer — edit text as needed -->
+          <p class="legal-text">
+            *By clicking Done I agree by electronic signature to (1) the
+            <a href="#">Electronic Disclosure Consent</a>; (2) receive recurring marketing communications from or on behalf of Erie Construction Mid-West, LLC dba Erie Home at the number provided, including autodialed calls, texts, and prerecorded messages (consent not required for purchase, data rates may apply; texts reply 'STOP' to opt out of texts or 'HELP' for help; and (3) Erie Home's
+            <a href="#">Privacy Policy</a>.
+          </p>
+
+        </form>
+      </div>
+      <!-- end .form-card -->
+
+    </div>
+    <!-- end .hero-content -->
+
+  </section>
+  <!-- end .hero -->
+
+  <!-- ─── HOW IT WORKS SECTION ──────────────────────── -->
+  <section class="how-it-works">
+ 
+    <!-- Edit section heading here -->
+    <h2 class="section-heading">Here's How It Works...</h2>
+ 
+    <div class="steps-grid">
+ 
+      <!-- ── Step 1 ── -->
+      <div class="step-card">
+        <!-- Replace icon path: images/arrow.png -->
+        <img src="images/arrow.png" alt="Get Started Online" class="step-icon" />
+        <h3 class="step-title">
+          <span>Step 1:</span>
+          Get Started Online
+        </h3>
+        <p class="step-body">
+          It only takes a minute to check availability in your area and schedule your <strong>FREE</strong> estimate.
+        </p>
+      </div>
+ 
+      <!-- ── Step 2 ── -->
+      <div class="step-card">
+        <!-- Replace icon path: images/check.png -->
+        <img src="images/check.png" alt="Free Estimate" class="step-icon" />
+        <h3 class="step-title">
+          <span>Step 2:</span>
+          Free Estimate
+        </h3>
+        <p class="step-body">
+          One of our friendly Metal Roofing Experts will inspect your roof, take measurements and give you a <strong>FREE</strong>, no-obligation estimate. Next-day appointments may be available!
+        </p>
+      </div>
+ 
+      <!-- ── Step 3 ── -->
+      <div class="step-card">
+        <!-- Replace icon path: images/calendar.png -->
+        <img src="images/calendar.png" alt="Installation" class="step-icon" />
+        <h3 class="step-title">
+          <span>Step 3:</span>
+          Installation
+        </h3>
+        <p class="step-body">
+          Our expert installation teams can completely replace your roof (including clean-up!) in as little as <strong>ONE</strong> day.
+        </p>
+      </div>
+ 
+      <!-- ── Step 4 ── -->
+      <div class="step-card">
+        <!-- Replace icon path: images/house.png -->
+        <img src="images/house.png" alt="Peace of Mind" class="step-icon" />
+        <h3 class="step-title">
+          <span>Step 4:</span>
+          Peace of Mind
+        </h3>
+        <p class="step-body">
+          We offer some of the longest-lasting and most durable roofing products on the market. Our products are virtually maintenance-free and backed by transferrable limited lifetime warranties.
+        </p>
+      </div>
+ 
+    </div>
+    <!-- end .steps-grid -->
+ 
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <!-- Edit button text and link here -->
+      <a href="#" class="btn-pricing">Click for Pricing!</a>
+      <!-- Edit caption here -->
+      <p class="cta-caption">(Enter your ZIP and answer a few quick questions!)</p>
+    </div>
+ 
+  </section>
+
+  
+  <!-- ─── MIDDLEMAN SECTION ─────────────────────────── -->
+  <section class="middleman-section">
+ 
+    <!-- Replace background image in CSS: images/background.jpg -->
+    <div class="middleman-bg"></div>
+    <div class="middleman-overlay"></div>
+ 
+    <div class="middleman-container">
+ 
+      <!-- LEFT: Worker/Feature Image -->
+      <div class="middleman-image-wrap">
+        <!-- Replace with actual image: images/worker.jpg -->
+        <img
+          src="images/man.jpg"
+          alt="Metal Roofing Expert"
+          class="middleman-image"
+        />
+      </div>
+ 
+      <!-- RIGHT: Text Content -->
+      <div class="middleman-text">
+ 
+        <!-- Edit headline here -->
+        <h2 class="middleman-headline">Cut Out the Middleman!</h2>
+ 
+        <!-- Edit subheading here -->
+        <p class="middleman-subheading">Full-Service Roof Replacement</p>
+ 
+        <!-- Edit body text here -->
+        <p class="middleman-body">
+          Our goal is to make a complex process as fast, easy and affordable as possible! We furnish, sell, install, service and arrange financing for customers. We control every aspect of quality and cost, so you don't have the hassle, risk and added cost of dealing with various middlemen.
+        </p>
+ 
+        <!-- Edit button text and link here -->
+        <a href="#" class="btn-get-pricing">Get Pricing</a>
+ 
+      </div>
+ 
+    </div>
+ 
+  </section>
+
+  <!-- ─── NEXT-GEN SECTION ──────────────────────────── -->
+  <section class="nextgen-section">
+ 
+    <!-- Edit heading here -->
+    <h2 class="nextgen-heading">
+      Our "Next-Generation" Stone Coated<br>Metal Roofing System
+    </h2>
+ 
+    <div class="nextgen-grid">
+ 
+      <!-- LEFT: Text + Checklist -->
+      <div class="nextgen-left">
+ 
+        <!-- Edit body paragraph here -->
+        <p class="nextgen-body">
+          The future of roofing is here! Our flagship metal roofing system comes in 3 beautiful designer styles (resembling shingle, tile and wood) and 25+ different colors to complement any home. Unlike most metal roofs that are easily dented by hail, our <strong>Next-Generation Metal Roofs</strong> have a unique stone coating that make them resistant to hail and extreme weather.
+        </p>
+ 
+        <!-- Edit checklist items here -->
+        <ul class="checklist">
+ 
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Lifetime limited transferrable warranty
+          </li>
+ 
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Wind-resistant up to 120MPH
+          </li>
+ 
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Class 4 Impact Resistant (baseball-size hail!)
+          </li>
+ 
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Fire resistant
+          </li>
+ 
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            100% recyclable
+          </li>
+ 
+        </ul>
+ 
+      </div>
+ 
+      <!-- RIGHT: Roof Image -->
+      <div class="nextgen-image-wrap">
+        <!-- Replace with actual image path: images/nextgen-roof.jpg -->
+        <img
+          src="images/roofing.jpg"
+          alt="Next-Generation Stone Coated Metal Roof on a home"
+          class="nextgen-image"
+        />
+      </div>
+ 
+    </div>
+  </section>
+
+   <section class="diagram-section">
+ 
+    <!-- Center product image — replace path: images/roofing-layers.png -->
+    <div class="diagram-image-wrap">
+      <img
+        src="images/roofing-layers.webp"
+        alt="Stone Coated Metal Roofing Layers Diagram"
+        class="diagram-image"
+      />
+    </div>
+ 
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <!-- Edit button text and link here -->
+      <a href="#" class="btn-pricing">Click for Pricing!</a>
+      <!-- Edit caption here -->
+      <p class="cta-caption">(Enter your ZIP and answer a few quick questions!)</p>
+    </div>
+ 
+  </section>
+
+   <!-- ─── ENERGY SAVINGS SECTION ────────────────────── -->
+  <section class="energy-section">
+ 
+    <!-- Replace background image in CSS .energy-bg if different from hero bg -->
+    <div class="energy-bg"></div>
+    <div class="energy-overlay"></div>
+ 
+    <div class="energy-container">
+ 
+      <!-- LEFT: Feature Image -->
+      <div class="energy-image-wrap">
+        <!-- Replace with actual image: images/energy-worker.jpg -->
+        <img
+          src="images/energy-worker.jpg"
+          alt="Worker installing energy-efficient metal roof"
+          class="energy-image"
+        />
+      </div>
+ 
+      <!-- RIGHT: Text Content -->
+      <div class="energy-text">
+ 
+        <!-- Edit headline here -->
+        <h2 class="energy-headline">Potential Energy Bill Savings!</h2>
+ 
+        <!-- Edit subheading here -->
+        <p class="energy-subheading">With an Energy-Efficient Metal<br>Roofing System</p>
+ 
+        <!-- Edit body text here -->
+        <p class="energy-body">
+          One of our metal roofs is more than just a durable steel roof, it's a complete, energy-efficient roofing system that can help lower your energy bills by keeping your home warmer in the winter and cooler in the summer.
+        </p>
+ 
+        <!-- Edit button text and link here -->
+        <a href="#" class="btn-get-pricing">Get Pricing</a>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ─── CUSTOMERS SECTION ─────────────────────────── -->
+  <section class="customers-section">
+ 
+    <!-- Replace with actual stars image: images/five-stars.png -->
+    <img
+      src="images/5-star.png"
+      alt="5 Star Rating"
+      class="stars-image"
+    />
+ 
+    <!-- Edit heading here -->
+    <h2 class="customers-heading">Hear From Our Customers</h2>
+ 
+    <!-- Edit subtext here -->
+    <p class="customers-subtext">
+      With Over 100,000 Satisfied Customers and Thousands of 5-Star Reviews Online, We Are America's Roof Replacement Leader!
+    </p>
+ 
+  </section>
+
+  <!-- ─── TESTIMONIAL & RATINGS SECTION ────────────── -->
+  <section class="testimonial-section">
+ 
+    <!-- Video Thumbnail with Play Button -->
+    <div class="video-wrap">
+ 
+      <!-- Replace with actual thumbnail image: images/video-thumbnail.jpg -->
+      <img
+        src="images/vid.png"
+        alt="Customer Testimonial Video"
+        class="video-thumbnail"
+      />
+ 
+    </div>
+ 
+    <!-- Ratings Image — replace with actual image: images/ratings.png -->
+    <div style="margin: 0 auto 28px; max-width: 380px; margin-top: -30px;">
+      <img
+        src="images/rating.png"
+        alt="Ratings: A+ BBB, 4.9 Facebook, 4.7 GuildQuality, 4.8 Google"
+        style="width: 100%; height: auto; display: block;"
+      />
+    </div>
+ 
+    <!-- CTA Button -->
+    <div class="cta-wrap">
+      <!-- Edit button text and link here -->
+      <a href="#" class="btn-zip">Check My Zip!</a>
+      <!-- Edit caption here -->
+      <p class="cta-caption">
+        (It's totally <strong>FREE</strong> to check availability in your zip code.)
+      </p>
+    </div>
+ 
+  </section>
+
+  <!-- ─── REVIEWS SECTION ───────────────────────────── -->
+  <section class="reviews-section">
+ 
+    <!-- Replace background collage image: images/reviews-bg.jpg -->
+    <div class="reviews-bg"></div>
+    <div class="reviews-overlay"></div>
+ 
+    <div class="reviews-container">
+ 
+      <!-- ── Review 1 ── -->
+      <div class="review-card">
+        <!-- Replace stars image: images/five-stars.png -->
+        <img src="images/5-star.png" alt="5 Stars" class="review-stars" />
+        <p class="review-quote">
+          "I am very pleased with my new roof. It was installed in a day and the crew did an excellent job of cleaning up after the job was done. <strong>I would highly recommend [a metal roof]</strong>, as it is the last roof you should ever need!"
+        </p>
+        <!-- Edit reviewer name here -->
+        <p class="review-name">Michael F.</p>
+      </div>
+ 
+      <!-- ── Review 2 ── -->
+      <div class="review-card">
+        <!-- Replace stars image: images/five-stars.png -->
+        <img src="images/5-star.png" alt="5 Stars" class="review-stars" />
+        <p class="review-quote">
+          "[A] few of our neighbors made comments about how nice our new roof looked. <strong>They were surprised to learn that it was a metal roof</strong> since it looks exactly like a shingled roof."
+        </p>
+        <!-- Edit reviewer name here -->
+        <p class="review-name">Francis C.</p>
+      </div>
+ 
+      <!-- ── Review 3 ── -->
+      <div class="review-card">
+        <!-- Replace stars image: images/five-stars.png -->
+        <img src="images/5-star.png" alt="5 Stars" class="review-stars" />
+        <p class="review-quote">
+          "Great company. Good product and reasonable prices. Very professional. <strong>As a construction worker myself it's nice to see a contractor that is on the ball.</strong> I would definitely hire them again!"
+        </p>
+        <!-- Edit reviewer name here -->
+        <p class="review-name">David B.</p>
+      </div>
+ 
+    </div>
+ 
+  </section>
+
+  <!-- ─── SMART FINANCIAL DECISION SECTION ─────────── -->
+  <section class="financial-section">
+ 
+    <div class="financial-grid">
+ 
+      <!-- LEFT: Text + Checklist + CTA -->
+      <div class="financial-left">
+ 
+        <!-- Edit heading here -->
+        <h2 class="financial-heading">The Smart Financial Decision!</h2>
+ 
+        <!-- Edit body text here -->
+        <p class="financial-body">
+          Investing in an energy-saving, high-quality roofing system can payoff <strong>BIG</strong> in the long run. Our roofing system may help you:
+        </p>
+ 
+        <!-- Edit checklist items here -->
+        <ul class="checklist">
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Significantly increase your home value
+          </li>
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Lower home insurance premiums
+          </li>
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Lower your energy bills
+          </li>
+          <li class="checklist-item">
+            <span class="check-icon">
+              <svg viewBox="0 0 16 16"><polyline points="3,8 6.5,11.5 13,4.5"/></svg>
+            </span>
+            Eliminate future repair &amp; replacement costs
+          </li>
+        </ul>
+ 
+        <!-- Edit button text and link here -->
+        <a href="#" class="btn-get-pricing">Get Pricing</a>
+ 
+      </div>
+ 
+      <!-- RIGHT: Customer Photo -->
+      <div class="financial-image-wrap">
+        <!-- Replace with actual image: images/financial-customers.jpg -->
+        <img
+          src="images/financial-customers.jpg"
+          alt="Happy customers with their new metal roof"
+          class="financial-image"
+        />
+      </div>
+ 
+    </div>
+ 
+  </section>
+
+  <!-- ─── NEW ROOF SECTION ──────────────────────────── -->
+  <section class="newroof-section">
+ 
+    <!-- Replace background image in CSS .newroof-bg if different -->
+    <div class="newroof-bg"></div>
+    <div class="newroof-overlay"></div>
+ 
+    <div class="newroof-container">
+ 
+      <!-- Edit heading here -->
+      <h2 class="newroof-heading">How to Know If You Need a New Roof</h2>
+ 
+      <!-- Edit body text here -->
+      <p class="newroof-body">
+        It may be difficult to spot potentially major problems caused by a faulty and failing roof. Don't let an outside problem become an inside problem! If you see any of these signs, or if you are noticing damage to the inside of your home, contact our Metal Roofing Experts right away for a <strong>FREE</strong> roof and attic inspection!
+      </p>
+ 
+      <!-- Row 1: 5 tiles -->
+      <div class="roof-grid-row1">
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/curled-shingles.jpg -->
+          <img src="images/roof4.jpg" alt="Curled Shingles" />
+          <span class="roof-tile-label">Curled Shingles</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/cracked-shingles.jpg -->
+          <img src="images/roof5.jpg" alt="Cracked Shingles" />
+          <span class="roof-tile-label">Cracked Shingles</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/missing-shingles.jpg -->
+          <img src="images/roof6.jpg" alt="Missing Shingles" />
+          <span class="roof-tile-label">Missing Shingles</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/granules-gutters.jpg -->
+          <img src="images/roof7.jpg" alt="Granules in the Gutters" />
+          <span class="roof-tile-label">Granules in the Gutters</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/shingles-yard.jpg -->
+          <img src="images/roof8.jpg" alt="Shingles in the Yard" />
+          <span class="roof-tile-label">Shingles in the Yard</span>
+        </div>
+ 
+      </div>
+ 
+      <!-- Row 2: 3 tiles centered -->
+      <div class="roof-grid-row2">
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/moss.jpg -->
+          <img src="images/roof1.jpg" alt="Moss" />
+          <span class="roof-tile-label">Moss</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/dark-streaks.jpg -->
+          <img src="images/roof2.jpg" alt="Dark Streaks" />
+          <span class="roof-tile-label">Dark Streaks</span>
+        </div>
+ 
+        <div class="roof-tile">
+          <!-- Replace: images/insects.jpg -->
+          <img src="images/roof3.jpg" alt="Insects" />
+          <span class="roof-tile-label">Insects</span>
+        </div>
+ 
+      </div>
+ 
+      <!-- CTA Button -->
+      <div class="cta-wrap">
+        <!-- Edit button text and link here -->
+        <a href="#" class="btn-pricing">Click for Pricing!</a>
+        <!-- Edit caption here -->
+        <p class="cta-caption">(Enter your ZIP and answer a few quick questions!)</p>
+      </div>
+ 
+    </div>
+ 
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────── -->
+  <footer class="site-footer">
+ 
+    <!-- Replace with actual logo: images/logo-metalroof.png -->
+    <img
+      src="images/logo-metalroof.png"
+      alt="Metal Roofing Innovations USA"
+      class="footer-logo"
+    />
+ 
+    <!-- Edit disclaimer text here -->
+    <p class="footer-disclaimer">
+      * Qualifying customers may be able to finance their purchase with third-party lenders unaffiliated with Service Providers who offer payment plans with no down payment options. All financing terms and conditions are arranged directly between the customer and such lender. Not all customers may qualify. Any finance terms advertised are estimates only.
+    </p>
+ 
+    <!-- Edit copyright text here -->
+    <p class="footer-copyright">
+      Copyright &copy; MetalRoofingInnovations.com. All Rights Reserved. MetalRoofingInnovations.com is not responsible for the offers, products or services provided by Service Providers.
+    </p>
+ 
+    <!-- Edit links here -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <span class="divider">|</span>
+      <a href="#">Terms and Conditions</a>
+    </div>
+ 
+  </footer>
+</body>
+</html>
+
+<script>
+function redirectToPage() {
+  window.location.href = "https://www.follwtrk.com/2BZZLHG/CS7G8P3/";
+}</script>
